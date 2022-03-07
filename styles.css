@@ -1,0 +1,134 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eeeeee;
+  color: #7c99ac;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+.menu {
+  padding: 5rem 0;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  background-color: #cc9544;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.menu-item {
+  display: grid;
+  gap: 1rem 2rem;
+  max-width: 25rem;
+}
+
+.photo {
+  object-fit: cover;
+  height: 250px;
+  width: 100%;
+  border: 2px solid #cc9544;
+  border-radius: 10px;
+  margin-top: 2px;
+  /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.item-info header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.75px dotted #789395;
+}
+
+.item-info h4 {
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+
+.price {
+  color: #cc9544;
+}
+
+.item-text {
+  margin-bottom: 0;
+  padding-top: 1rem;
+}
+
+.section-center {
+  width: 80vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  gap: 3rem 2rem;
+  justify-content: center;
+}
+
+.btn {
+  border-radius: 10px;
+  background: transparent;
+  display: inline-block;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.btn-container {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.filter-btn {
+  text-transform: capitalize;
+  padding: 2px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  border: 1px solid #ffd32d;
+  background-color: transparent;
+  color: #ffd32d;
+  transition: var(transition);
+}
+.filter-btn:hover {
+  background-color: #ffd32d;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-item {
+    grid-template-columns: 225px 1fr;
+    gap: 0 1.25rem;
+    max-width: 40 rem;
+  }
+  .photo {
+    height: 175px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-center {
+    width: 95vw;
+    grid-template-columns: 1fr 1fr;
+  }
+  .photo {
+    height: 150px;
+  }
+}
